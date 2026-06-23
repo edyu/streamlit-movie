@@ -16,4 +16,4 @@ if "results" in st.session_state:
             poster_url = Backend.get_poster_url(movie.get('poster_path', None))
             st.image(poster_url, width=250)
             st.markdown(f"**Overview:** {movie.get('overview', 'N/A')}")
-            st.markdown(f"**Rating:** {movie.get('rating', 'N/A')}")
+            st.markdown(f"**Rating:** {movie.get('vote_average', 'N/A')}")
